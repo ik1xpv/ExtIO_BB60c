@@ -1,0 +1,26 @@
+LIBRARY ExtIO_BB60c.DLL
+EXPORTS
+ InitHW = _InitHW@12
+ OpenHW = _OpenHW@0
+ CloseHW = _CloseHW@0
+
+ StartHW64 = _StartHW64@8
+ StopHW = _StopHW@0
+ SetCallback = _SetCallback@4
+
+ SetHWLO64 = _SetHWLO64@8
+ GetStatus = _GetStatus@0
+
+ RawDataReady = _RawDataReady@16 
+ GetHWLO = _GetHWLO@0 
+ GetHWSR = _GetHWSR@0 
+
+ GetAttenuators = _GetAttenuators@8
+ GetActualAttIdx = _GetActualAttIdx@0
+ SetAttenuator = _SetAttenuator@4
+
+ ; Samplerate / Bandwidth:
+ ExtIoGetSrates = _ExtIoGetSrates@8
+ ExtIoGetActualSrateIdx = _ExtIoGetActualSrateIdx@0
+ ExtIoSetSrate = _ExtIoSetSrate@4
+ ExtIoGetBandwidth = _ExtIoGetBandwidth@4
